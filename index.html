@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed İmamoğlu | Yazılım Mühendisi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">&lt;M. İmamoğlu /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#bento-dashboard">Kariyer</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li><button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-container container">
+            <div class="hero-text">
+                <span class="badge">Yazılım Mühendisliği Öğrencisi</span>
+                <h1 class="gradient-text">Muhammed İmamoğlu</h1>
+                <h2>Sistem Mimarisi & Yapay Zeka</h2>
+                <p>Kapsamlı problemlere ilk prensipler (first-principles) yaklaşımıyla çözümler üretiyor, algoritmik verimliliği merkeze alan modern mimariler geliştiriyorum.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn"><i class="fa-solid fa-code"></i> Projeleri İncele</a>
+                    <a href="#contact" class="btn secondary-btn"><i class="fa-regular fa-paper-plane"></i> İletişim</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <div class="terminal-title">developer.exe</div>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="keyword">const</span> <span class="variable">developer</span> = {</p>
+                        <p class="indent">name: <span class="string">'Muhammed İmamoğlu'</span>,</p>
+                        <p class="indent">university: <span class="string">'Malatya Turgut Özal (4. Sınıf)'</span>,</p>
+                        <p class="indent">skills: [<span class="string">'Python'</span>, <span class="string">'JS'</span>, <span class="string">'OOP'</span>, <span class="string">'Blender'</span>],</p>
+                        <p class="indent">focus: <span class="string">'Performance & Clean Code'</span></p>
+                        <p>};</p>
+                        <p><span class="keyword">developer</span>.execute(); <span class="cursor">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="bento-dashboard" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">Kariyer & Yetkinlikler</h2>
+                <div class="bento-grid">
+                    
+                    <div class="bento-item bento-bio">
+                        <h3><i class="fa-solid fa-user-astronaut"></i> Mühendislik Vizyonum</h3>
+                        <p>Sadece kod yazmayı değil; bellek yönetimini, UI/UX performansını ve doğru veri yapılarını kurgulamayı hedefleyen bir sistem mimarıyım. Frontend tasarımlarından, backend entegrasyonlarına ve makine öğrenmesi modellerine kadar uçtan uca (end-to-end) geliştirmeler yapıyorum.</p>
+                    </div>
+
+                    <div class="bento-item bento-timeline">
+                        <h3><i class="fa-solid fa-timeline"></i> Gelişim Süreci</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="date">Ekim 2026</div>
+                                <h4>Yurt Yönetim Otomasyonu</h4>
+                                <p>MTÜ Dijital Dönüşüm Ofisi'nde 20 günlük staj projesi. 2 kişilik ekiple frontend mimarisi, Blob stream ile PDF/Excel export entegrasyonu sağlandı.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="date">Devam Ediyor</div>
+                                <h4>Lisans Eğitimi (4. Sınıf)</h4>
+                                <p>Malatya Turgut Özal Üniversitesi Yazılım Mühendisliği. İşletim Sistemleri, Makine Öğrenmesi, 3D Oyun Programlama ve OOP prensipleri üzerine akademik çalışmalar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-item bento-tech">
+                        <h3><i class="fa-solid fa-microchip"></i> Teknoloji Yığını</h3>
+                        <div class="tech-tags-large">
+                            <span>HTML5/CSS3</span><span>JavaScript</span><span>DOM & LocalStorage</span>
+                            <span>Python</span><span>Scikit-Learn</span><span>NLP & TF-IDF</span>
+                            <span>Git/CLI</span><span>OOP (Proxy Pattern)</span><span>Blender (3D)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-alt reveal">
+            <div class="container">
+                <h2 class="section-title">Öne Çıkan Projeler</h2>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & Mimari</button>
+                    <button class="filter-btn" data-filter="ai">Yapay Zeka (NLP)</button>
+                    <button class="filter-btn" data-filter="3d">3D Tasarım</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3><i class="fa-solid fa-server"></i> MTÜ Yurt Yönetim Otomasyonu</h3>
+                            </div>
+                            <p>HTML/CSS/JS ile responsive arayüz tasarlandı. localStorage tabanlı karanlık tema entegre edildi ve backend'den dönen veriler Blob stream üzerinden dışa aktarıldı.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span><span>API</span><span>Stream Data</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3><i class="fa-solid fa-brain"></i> Türkçe Duygu Analizi (NLP)</h3>
+                            </div>
+                            <p>Kaggle üzerinde TF-IDF vektörizasyonu kullanılarak Multinomial Naive Bayes, Lojistik Regresyon ve Lineer SVM sınıflandırıcıları ile sentiment analizi yapıldı.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Machine Learning</span><span>NLP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="3d">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3><i class="fa-solid fa-cubes"></i> Low-Poly Oyun Varlıkları</h3>
+                            </div>
+                            <p>Bilgisayar Grafikleri ve Oyun Programlama dersi için Blender'da modellenen, topolojisi oyun motorları için optimize edilmiş 3D hayatta kalma/çiftlik nesneleri.</p>
+                            <div class="project-tags">
+                                <span>Blender</span><span>3D Modelleme</span><span>Optimizasyon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">İletişime Geç</h2>
+                <div class="contact-content">
+                    <p>Yazılım mimarileri, veri yapıları veya staj imkanları hakkında görüşmek için bana ulaşabilirsiniz.</p>
+                    
+                    <a href="mailto:muhammedimamoglu50@gmail.com" class="btn primary-btn"><i class="fa-regular fa-envelope"></i> E-Posta Gönder</a>
+                    
+                     <div class="social-links">
+                        <a href="https://github.com/muhammedd35" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/muhammed-imamoğlu-07229524a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://kaggle.com/muhammedmamolu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-kaggle"></i> Kaggle</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Muhammed İmamoğlu. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
