@@ -25,7 +25,7 @@
                 <span class="badge">Yazılım Mühendisliği Öğrencisi</span>
                 <h1 class="gradient-text">Muhammed İmamoğlu</h1>
                 <h2>Sistem Mimarisi & Yapay Zeka</h2>
-                <p>Kapsamlı problemlere ilk prensipler (first-principles) yaklaşımıyla çözümler üretiyor, algoritmik verimliliği merkeze alan modern mimariler geliştiriyorum.</p>
+                <p>Kapsamlı problemlere ilk prensipler (first-principles) yaklaşımıyla çözümler üretiyor, algoritmik verimliliği merkeze alan modern mimariler ve veri modelleri geliştiriyorum.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn primary-btn"><i class="fa-solid fa-code"></i> Projeleri İncele</a>
                     <a href="#contact" class="btn secondary-btn"><i class="fa-regular fa-paper-plane"></i> İletişim</a>
@@ -42,8 +42,8 @@
                         <p><span class="keyword">const</span> <span class="variable">developer</span> = {</p>
                         <p class="indent">name: <span class="string">'Muhammed İmamoğlu'</span>,</p>
                         <p class="indent">university: <span class="string">'Malatya Turgut Özal (4. Sınıf)'</span>,</p>
-                        <p class="indent">skills: [<span class="string">'Python'</span>, <span class="string">'JS'</span>, <span class="string">'OOP'</span>, <span class="string">'Blender'</span>],</p>
-                        <p class="indent">focus: <span class="string">'Performance & Clean Code'</span></p>
+                        <p class="indent">skills: [<span class="string">'Python'</span>, <span class="string">'SQL'</span>, <span class="string">'JS'</span>, <span class="string">'NLP'</span>],</p>
+                        <p class="indent">focus: <span class="string">'Data Architecture & ML Models'</span></p>
                         <p>};</p>
                         <p><span class="keyword">developer</span>.execute(); <span class="cursor">_</span></p>
                     </div>
@@ -60,7 +60,7 @@
                     
                     <div class="bento-item bento-bio">
                         <h3><i class="fa-solid fa-user-astronaut"></i> Mühendislik Vizyonum</h3>
-                        <p>Sadece kod yazmayı değil; bellek yönetimini, UI/UX performansını ve doğru veri yapılarını kurgulamayı hedefleyen bir sistem mimarıyım. Frontend tasarımlarından, backend entegrasyonlarına ve makine öğrenmesi modellerine kadar uçtan uca (end-to-end) geliştirmeler yapıyorum.</p>
+                        <p>Yazılım geliştirmeyi salt kod yazmak olarak değil; veri tabanı normalizasyonlarından, kompleks JSON veri filtrelemelerine ve makine öğrenmesi algoritmalarının hiperparametre optimizasyonlarına kadar uzanan bütüncül bir sistem mimarisi olarak görüyorum. Performans darboğazlarını öngörerek ölçeklenebilir yapılar kurmaya odaklanıyorum.</p>
                     </div>
 
                     <div class="bento-item bento-timeline">
@@ -68,13 +68,13 @@
                         <div class="timeline">
                             <div class="timeline-item">
                                 <div class="date">Ekim 2026</div>
-                                <h4>Yurt Yönetim Otomasyonu</h4>
-                                <p>MTÜ Dijital Dönüşüm Ofisi'nde 20 günlük staj projesi. 2 kişilik ekiple frontend mimarisi, Blob stream ile PDF/Excel export entegrasyonu sağlandı.</p>
+                                <h4>MTÜ Dijital Dönüşüm Stajı</h4>
+                                <p>20 günlük staj projesinde kurum içi yurt yönetim sisteminin frontend mimarisi ve Blob stream tabanlı veri dışa aktarım (PDF/Excel) servisleri entegre edildi.</p>
                             </div>
                             <div class="timeline-item">
                                 <div class="date">Devam Ediyor</div>
                                 <h4>Lisans Eğitimi (4. Sınıf)</h4>
-                                <p>Malatya Turgut Özal Üniversitesi Yazılım Mühendisliği. İşletim Sistemleri, Makine Öğrenmesi, 3D Oyun Programlama ve OOP prensipleri üzerine akademik çalışmalar.</p>
+                                <p>Malatya Turgut Özal Üniversitesi. İlişkisel Veritabanı Sistemleri, Doğal Dil İşleme, İşletim Sistemleri ve OOP prensipleri üzerine akademik çalışmalar.</p>
                             </div>
                         </div>
                     </div>
@@ -82,9 +82,9 @@
                     <div class="bento-item bento-tech">
                         <h3><i class="fa-solid fa-microchip"></i> Teknoloji Yığını</h3>
                         <div class="tech-tags-large">
-                            <span>HTML5/CSS3</span><span>JavaScript</span><span>DOM & LocalStorage</span>
-                            <span>Python</span><span>Scikit-Learn</span><span>NLP & TF-IDF</span>
-                            <span>Git/CLI</span><span>OOP (Proxy Pattern)</span><span>Blender (3D)</span>
+                            <span>HTML5/CSS3/JS</span><span>SQL & RDBMS</span><span>Data Normalization</span>
+                            <span>Python (Pandas/NumPy)</span><span>Scikit-Learn</span><span>NLP (Tokenization)</span>
+                            <span>Git/CLI</span><span>OOP Mimarisi</span><span>Blender (3D)</span>
                         </div>
                     </div>
                 </div>
@@ -97,47 +97,79 @@
                 
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">Tümü</button>
-                    <button class="filter-btn" data-filter="frontend">Frontend & Mimari</button>
                     <button class="filter-btn" data-filter="ai">Yapay Zeka (NLP)</button>
+                    <button class="filter-btn" data-filter="backend">Backend & Veritabanı</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & Mimari</button>
                     <button class="filter-btn" data-filter="3d">3D Tasarım</button>
                 </div>
 
                 <div class="projects-grid">
+                    
+                    <!-- Proje 1: Veritabanı (Yeni) -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3><i class="fa-solid fa-database"></i> E-Ticaret & İlan Veritabanı Mimarisi</h3>
+                            </div>
+                            <p>Büyük ölçekli ilan platformları (Örn: Sahibinden) referans alınarak tasarlanmış ilişkisel veritabanı (RDBMS) projesi. Kategori, alt kategori, kullanıcı rolleri ve ilan detayları arasındaki karmaşık (One-to-Many, Many-to-Many) ilişkiler 3NF (Third Normal Form) standartlarına uygun olarak modellendi ve veri bütünlüğü sağlandı.</p>
+                            <div class="project-tags">
+                                <span>SQL</span><span>ER Diyagramı</span><span>Veri Normalizasyonu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proje 2: Genişletilmiş NLP (Güncellendi) -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3><i class="fa-solid fa-brain"></i> Türkçe Duygu Analizi Pipeline'ı</h3>
+                            </div>
+                            <p>Sosyal medya metinleri üzerinde çalışan kapsamlı NLP projesi. Stopwords temizliği ve Lemmatizasyon gibi ön işleme adımlarının ardından TF-IDF vektörizasyonu uygulandı. Multinomial Naive Bayes, Lojistik Regresyon ve Lineer SVM modelleri kurularak hiperparametre optimizasyonu ile en yüksek accuracy (doğruluk) değerine ulaşıldı.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Scikit-Learn</span><span>NLP & Preprocessing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proje 3: Tercih Robotu (Yeni) -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3><i class="fa-solid fa-code-branch"></i> Dinamik Üniversite Tercih Motoru</h3>
+                            </div>
+                            <p>Kullanıcıların puan ve sıralama verilerine göre en uygun üniversite/bölüm eşleşmelerini bulan interaktif web uygulaması. HTML/CSS/JS kullanılarak geliştirilen projede, binlerce satırlık JSON tabanlı veri seti, Client-Side (istemci tarafı) algoritmalarla anlık olarak filtrelendi ve DOM manipülasyonu ile ekrana yansıtıldı.</p>
+                            <div class="project-tags">
+                                <span>JavaScript (ES6+)</span><span>JSON Data Filtering</span><span>DOM Manipülasyonu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proje 4: MTÜ (Mevcut) -->
                     <div class="project-card" data-category="frontend">
                         <div class="project-info">
                             <div class="project-header">
                                 <h3><i class="fa-solid fa-server"></i> MTÜ Yurt Yönetim Otomasyonu</h3>
                             </div>
-                            <p>HTML/CSS/JS ile responsive arayüz tasarlandı. localStorage tabanlı karanlık tema entegre edildi ve backend'den dönen veriler Blob stream üzerinden dışa aktarıldı.</p>
+                            <p>HTML/CSS/JS ile responsive arayüz tasarlandı. localStorage tabanlı karanlık tema entegre edildi ve backend'den dönen veriler Blob stream üzerinden PDF/Excel formatlarında başarıyla dışa aktarıldı.</p>
                             <div class="project-tags">
                                 <span>JavaScript</span><span>API</span><span>Stream Data</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card" data-category="ai">
-                        <div class="project-info">
-                            <div class="project-header">
-                                <h3><i class="fa-solid fa-brain"></i> Türkçe Duygu Analizi (NLP)</h3>
-                            </div>
-                            <p>Kaggle üzerinde TF-IDF vektörizasyonu kullanılarak Multinomial Naive Bayes, Lojistik Regresyon ve Lineer SVM sınıflandırıcıları ile sentiment analizi yapıldı.</p>
-                            <div class="project-tags">
-                                <span>Python</span><span>Machine Learning</span><span>NLP</span>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- Proje 5: 3D (Mevcut) -->
                     <div class="project-card" data-category="3d">
                         <div class="project-info">
                             <div class="project-header">
                                 <h3><i class="fa-solid fa-cubes"></i> Low-Poly Oyun Varlıkları</h3>
                             </div>
-                            <p>Bilgisayar Grafikleri ve Oyun Programlama dersi için Blender'da modellenen, topolojisi oyun motorları için optimize edilmiş 3D hayatta kalma/çiftlik nesneleri.</p>
+                            <p>Bilgisayar Grafikleri ve Oyun Programlama dersi için Blender'da modellenen, topolojisi oyun motorları (Unity/Unreal) için optimize edilmiş 3D hayatta kalma/çiftlik nesneleri.</p>
                             <div class="project-tags">
                                 <span>Blender</span><span>3D Modelleme</span><span>Optimizasyon</span>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -146,14 +178,12 @@
             <div class="container">
                 <h2 class="section-title">İletişime Geç</h2>
                 <div class="contact-content">
-                    <p>Yazılım mimarileri, veri yapıları veya staj imkanları hakkında görüşmek için bana ulaşabilirsiniz.</p>
-                    
+                    <p>Yazılım mimarileri, veri tabanı modellemeleri veya staj imkanları hakkında görüşmek için bana ulaşabilirsiniz.</p>
                     <a href="mailto:muhammedimamoglu50@gmail.com" class="btn primary-btn"><i class="fa-regular fa-envelope"></i> E-Posta Gönder</a>
-                    
-                     <div class="social-links">
-                        <a href="https://github.com/muhammedd35" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://linkedin.com/in/muhammed-imamoğlu-07229524a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://kaggle.com/muhammedmamolu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-kaggle"></i> Kaggle</a>
+                    <div class="social-links">
+                        <a href="https://github.com/kullanici-adin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/kullanici-adin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://kaggle.com/kullanici-adin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-kaggle"></i> Kaggle</a>
                     </div>
                 </div>
             </div>
